@@ -6,5 +6,20 @@ public class Solution {
         bird.walk();
         bird.fly();
         bird.sing();
+
+        Chicken chicken = new Chicken();
+        try {
+            chicken.fly();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error Message: " + e.getMessage());
+        }
+
+        Rooster rooster = new Rooster();
+        rooster.sing();
+
+        RoosterNoneInherit roosterNoneInherit = new RoosterNoneInherit();
+        rooster.sing();
+
     }
 }
