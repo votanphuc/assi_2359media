@@ -11,9 +11,4 @@ public class Duck extends Bird {
     public void say() {
         super.say("Quack, quack");
     }
-
-    public void swim() {
-        System.out.println(swimBehavior.swim());
-
-    }
 }

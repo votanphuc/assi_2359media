@@ -1,6 +1,10 @@
 package main.java.com.media2359.assigment;
 
 import main.java.com.media2359.assigment.animal.bird.*;
+import main.java.com.media2359.assigment.animal.fish.Clownfish;
+import main.java.com.media2359.assigment.animal.fish.Dolphin;
+import main.java.com.media2359.assigment.animal.fish.Fish;
+import main.java.com.media2359.assigment.animal.fish.Shark;
 
 public class Solution {
     public static void main(String[] args) {
@@ -9,8 +13,13 @@ public class Solution {
         bird.fly();
         bird.sing();
 
+        Duck duck = new Duck();
+        duck.swim();
+        duck.say();
+
         Chicken chicken = new Chicken();
         chicken.fly();
+        chicken.say();
 
         Rooster rooster = new Rooster();
         rooster.say();
@@ -26,5 +35,20 @@ public class Solution {
         parrot = new ParrotLiveWithRooster();
         parrot.say();
 
+        Fish fish = new Fish();
+        fish.swim();
+
+        Shark shark = new Shark();
+        System.out.println(shark.getSize());
+        System.out.println(shark.getColor());
+        shark.eat();
+
+        Clownfish clownfish = new Clownfish();
+        System.out.println(shark.getSize());
+        System.out.println(shark.getColor());
+        clownfish.joke();
+
+        Dolphin dolphin = new Dolphin();
+        dolphin.swim();
     }
 }

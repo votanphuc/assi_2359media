@@ -12,12 +12,16 @@ public abstract class Animal {
     protected SingBehavior singBehavior;
     protected SwimBehavior swimBehavior;
 
-    public Animal() {
+    protected Animal() {
         walkBehavior = new ItWalk();
     }
 
     public void walk() {
         System.out.println(walkBehavior.walk());
+    }
+
+    public void swim(){
+        System.out.println(swimBehavior.swim());
     }
 
     public FlyBehavior getFlyBehavior() {
