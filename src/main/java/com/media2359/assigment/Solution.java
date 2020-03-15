@@ -21,5 +21,13 @@ public class Solution {
         RoosterNoneInherit roosterNoneInherit = new RoosterNoneInherit();
         rooster.sing();
 
+        Parrot parrot;
+        parrot = new ParrotLiveWithDog();
+        parrot.sing();
+        parrot = new ParrotLiveWithCat();
+        parrot.sing();
+        parrot = new ParrotLiveWithRooster();
+        parrot.sing();
+
     }
 }
