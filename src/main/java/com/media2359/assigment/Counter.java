@@ -2,7 +2,12 @@ package main.java.com.media2359.assigment;
 
 import main.java.com.media2359.assigment.animal.Animal;
 import main.java.com.media2359.assigment.animal.bird.*;
+import main.java.com.media2359.assigment.animal.butterfly.Butterfly;
+import main.java.com.media2359.assigment.animal.butterfly.Caterpillar;
+import main.java.com.media2359.assigment.animal.fish.Clownfish;
+import main.java.com.media2359.assigment.animal.fish.Dolphin;
 import main.java.com.media2359.assigment.animal.fish.Fish;
+import main.java.com.media2359.assigment.animal.fish.Shark;
 import main.java.com.media2359.assigment.behavior.impl.ItFly;
 import main.java.com.media2359.assigment.behavior.impl.ItSing;
 import main.java.com.media2359.assigment.behavior.impl.ItSwim;
@@ -18,10 +23,11 @@ public class Counter {
                 new Rooster(),
                 new Parrot(),
                 new Fish(),
-//                new Shark(),
-//                new Clownfish(),
-//                new Dolphin(),
-//                new Butterfly(),
+                new Shark(),
+                new Clownfish(),
+                new Dolphin(),
+                new Butterfly(),
+                new Caterpillar()
         };
         int flyableCounter = 0;
         int walkableCounter = 0;
