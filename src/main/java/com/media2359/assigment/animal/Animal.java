@@ -35,6 +35,12 @@ public abstract class Animal {
         }
     }
 
+    public void sing() {
+        if (singBehavior != null) {
+            System.out.println(singBehavior.sing());
+        }
+    }
+
     public FlyBehavior getFlyBehavior() {
         return flyBehavior;
     }

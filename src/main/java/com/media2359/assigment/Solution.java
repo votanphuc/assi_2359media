@@ -2,6 +2,7 @@ package main.java.com.media2359.assigment;
 
 import main.java.com.media2359.assigment.animal.bird.*;
 import main.java.com.media2359.assigment.animal.butterfly.Butterfly;
+import main.java.com.media2359.assigment.animal.butterfly.Caterpillar;
 import main.java.com.media2359.assigment.animal.fish.Clownfish;
 import main.java.com.media2359.assigment.animal.fish.Dolphin;
 import main.java.com.media2359.assigment.animal.fish.Fish;
@@ -54,5 +55,10 @@ public class Solution {
 
         Butterfly butterfly = new Butterfly();
         butterfly.fly();
+        butterfly.sing();
+
+        Caterpillar caterpillar = new Caterpillar();
+        caterpillar.walk();
+        caterpillar.fly();
     }
 }
