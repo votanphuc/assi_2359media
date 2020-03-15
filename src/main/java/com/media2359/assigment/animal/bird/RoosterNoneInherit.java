@@ -7,7 +7,7 @@ public class RoosterNoneInherit {
         chicken.fly();
     }
 
-    public void sing() {
-        System.out.println("Cock-a-doodle-doo");
+    public void say() {
+        chicken.say("Cock-a-doodle-doo");
     }
 }
