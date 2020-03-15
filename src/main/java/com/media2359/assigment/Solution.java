@@ -1,5 +1,7 @@
 package main.java.com.media2359.assigment;
 
+import main.java.com.media2359.assigment.animal.bird.*;
+
 public class Solution {
     public static void main(String[] args) {
         Bird bird = new Bird();
@@ -8,26 +10,21 @@ public class Solution {
         bird.sing();
 
         Chicken chicken = new Chicken();
-        try {
-            chicken.fly();
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Error Message: " + e.getMessage());
-        }
+        chicken.fly();
 
         Rooster rooster = new Rooster();
-        rooster.sing();
+        rooster.say();
 
         RoosterNoneInherit roosterNoneInherit = new RoosterNoneInherit();
-        rooster.sing();
+        rooster.say();
 
         Parrot parrot;
         parrot = new ParrotLiveWithDog();
-        parrot.sing();
+        parrot.say();
         parrot = new ParrotLiveWithCat();
-        parrot.sing();
+        parrot.say();
         parrot = new ParrotLiveWithRooster();
-        parrot.sing();
+        parrot.say();
 
     }
 }

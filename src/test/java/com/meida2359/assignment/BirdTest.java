@@ -1,6 +1,6 @@
 package test.java.com.meida2359.assignment;
 
-import main.java.com.media2359.assigment.Bird;
+import main.java.com.media2359.assigment.animal.bird.Bird;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package main.java.com.media2359.assigment;
+package main.java.com.media2359.assigment.animal.bird;
 
 public class Rooster extends Chicken {
     @Override
