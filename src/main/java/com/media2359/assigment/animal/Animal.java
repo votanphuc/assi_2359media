@@ -7,6 +7,7 @@ import main.java.com.media2359.assigment.behavior.WalkBehavior;
 import main.java.com.media2359.assigment.behavior.impl.ItWalk;
 
 public abstract class Animal {
+
     protected FlyBehavior flyBehavior;
     protected WalkBehavior walkBehavior;
     protected SingBehavior singBehavior;
@@ -17,11 +18,21 @@ public abstract class Animal {
     }
 
     public void walk() {
-        System.out.println(walkBehavior.walk());
+        if (walkBehavior != null) {
+            System.out.println(walkBehavior.walk());
+        }
     }
 
-    public void swim(){
-        System.out.println(swimBehavior.swim());
+    public void swim() {
+        if (swimBehavior != null) {
+            System.out.println(swimBehavior.swim());
+        }
+    }
+
+    public void fly() {
+        if (flyBehavior != null) {
+            System.out.println(flyBehavior.fly());
+        }
     }
 
     public FlyBehavior getFlyBehavior() {

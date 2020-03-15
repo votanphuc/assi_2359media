@@ -11,12 +11,10 @@ public class Bird extends Animal {
         singBehavior = new ItSing();
     }
 
-    public void fly() {
-        System.out.println(flyBehavior.fly());
-    }
-
     public void sing() {
-        System.out.println(singBehavior.sing());
+        if (singBehavior != null) {
+            System.out.println(singBehavior.sing());
+        }
     }
 
     protected void say(String sound) {
