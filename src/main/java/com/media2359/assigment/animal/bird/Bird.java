@@ -1,18 +1,16 @@
 package main.java.com.media2359.assigment.animal.bird;
 
 import main.java.com.media2359.assigment.animal.Animal;
-import main.java.com.media2359.assigment.behavior.Flys;
-import main.java.com.media2359.assigment.behavior.impl.ItFlys;
+import main.java.com.media2359.assigment.behavior.impl.ItFly;
 
 public class Bird extends Animal {
-    protected Flys flyingType;
 
     public Bird() {
-        flyingType = new ItFlys();
+        flyBehavior = new ItFly();
     }
 
     public void fly() {
-        System.out.println(flyingType.fly());
+        System.out.println(flyBehavior.fly());
     }
 
     public void sing() {

@@ -5,7 +5,7 @@ import main.java.com.media2359.assigment.behavior.impl.CantFly;
 public class Chicken extends Bird {
 
     public Chicken() {
-        flyingType = new CantFly();
+        flyBehavior = new CantFly();
     }
 
     public void say() {
