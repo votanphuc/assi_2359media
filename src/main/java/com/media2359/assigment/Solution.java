@@ -7,6 +7,8 @@ import main.java.com.media2359.assigment.animal.fish.Clownfish;
 import main.java.com.media2359.assigment.animal.fish.Dolphin;
 import main.java.com.media2359.assigment.animal.fish.Fish;
 import main.java.com.media2359.assigment.animal.fish.Shark;
+import main.java.com.media2359.assigment.util.Language;
+import main.java.com.media2359.assigment.util.Locale;
 
 public class Solution {
     public static void main(String[] args) {
@@ -60,5 +62,9 @@ public class Solution {
         Caterpillar caterpillar = new Caterpillar();
         caterpillar.walk();
         caterpillar.fly();
+
+        Language.locale = Locale.DUTCH;
+        Rooster rooster1 = new Rooster();
+        rooster1.say();
     }
 }
